@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de tareas</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" 
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" 
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style/style.css">
+
+</head>
+<body>
+  
+    
+    <nav class="navbar navbar-light bg-light">
+        <div class="container">
+            <a href="" class="navbar-brand">Pendientes</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row pt-5">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <form id="tareaFormulario">
+                            <div class="form-group">
+                                <input type="text" id="nombreTarea" placeholder="Nombre de tarea" style="width: 100%">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" id="detalleTarea" cols="80" rows="8" placeholder="Descripción de la tarea"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-block">Guardar</button>
+                        </form>
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+            <div id="tareas">
+            </div>
+            </div>
+            
+        </div>
+    </div>
+
+<script src="js/index.js"></script>
+</body>
+</html>
